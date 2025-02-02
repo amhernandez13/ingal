@@ -1,0 +1,33 @@
+.header {
+    position: fixed; /* Fija el header */
+    top: 0; /* Lo posiciona en la parte superior */
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho */
+    color: white;
+    padding: 1rem;
+    z-index: 1000; /* Asegura que esté por encima del video */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    display: block;
+  }
+  
+  .nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .nav a:hover {
+    color: red;
+  }
+  

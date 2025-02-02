@@ -1,95 +1,116 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Ubicanos from "./components/Ubicanos/Ubicanos";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+    <main>
+      {/* Video */}
+      <div style={{ position: "relative", width: "100%", overflow: "hidden" }}>
+        <video
+          src="/videos/presentacion.mp4" // Ruta del video en public/videos
+          autoPlay
+          loop
+          muted
+          playsInline
+          style={{
+            width: "100%",
+            height: "auto",
+            display: "block",
+          }}
         />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+      </div>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+      {/* Texto alineado a la derecha */}
+      <div
+        style={{
+          padding: "50px",
+          textAlign: "right",
+          background: "rgba(0, 0, 0, 0.7)",
+          color: "white", // Asegura que el texto sea legible
+        }}
+      >
+        <h1 style={{ fontSize: "48px", fontWeight: "bold", lineHeight: "1.2" }}>
+          Fabricamos la mejor solución para su <br /> proyecto
+        </h1>
+      </div>
+
+      <div style={{ padding: "50px", textAlign: "center" }}>
+        <h2
+          style={{
+            fontSize: "24px",
+            fontWeight: "bold",
+            marginBottom: "50px",
+            textAlign: "left",
+          }}
+        >
+          CON PROYECTOS EN DIFERENTES ZONAS A NIVEL NACIONAL
+        </h2>
+
+        {/* Grilla de 2 filas x 5 columnas */}
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(5, 1fr)", // 5 columnas
+            gridTemplateRows: "repeat(2, 150px)", // 2 filas con altura fija
+            gap: "10px",
+            margin: "0 auto",
+          }}
+        >
+          {/* Primera fila */}
+          <div style={{ background: "#ddd" }}>
+            <Image src="/vercel.svg" alt="Proyecto" width={100} height={100} />
+          </div>
+          <div></div>
+          <div style={{ background: "#ddd" }}>
+            <Image src="/vercel.svg" alt="Proyecto" width={100} height={100} />
+          </div>
+          <div></div>
+          <div style={{ background: "#ddd" }}>
+            <Image src="/vercel.svg" alt="Proyecto" width={100} height={100} />
+          </div>
+
+          {/* Segunda fila */}
+          <div></div>
+          <div style={{ background: "#ddd" }}>
+            <Image src="/vercel.svg" alt="Proyecto" width={100} height={100} />
+          </div>
+          <div></div>
+          <div style={{ background: "#ddd" }}>
+            <Image src="/vercel.svg" alt="Proyecto" width={100} height={100} />
+          </div>
+          <div></div>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+      </div>
+      <div
+        style={{
+          background: "white",
+          borderRadius: "150px",
+          padding: "30px 50px",
+          margin: "50px auto", // Centra y separa de los extremos
+          maxWidth: "90%", // Evita que llegue a los extremos de la pantalla
+          boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)", // Agrega un leve sombreado
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between", // Ubica los números a la izquierda, centro y derecha
+            textAlign: "center",
+          }}
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+          <h2 style={{ fontSize: "48px", fontWeight: "bold", color: "red" }}>
+            40,000+
+          </h2>
+          <h2 style={{ fontSize: "48px", fontWeight: "bold", color: "red" }}>
+            35,000+
+          </h2>
+          <h2 style={{ fontSize: "48px", fontWeight: "bold", color: "red" }}>
+            9,000+
+          </h2>
+        </div>
+      </div>
+      <Ubicanos />
+    </main>
   );
 }
