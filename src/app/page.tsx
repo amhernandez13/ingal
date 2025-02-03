@@ -54,30 +54,261 @@ export default function Home() {
             gridTemplateColumns: "repeat(5, 1fr)", // 5 columnas
             gridTemplateRows: "repeat(2, 150px)", // 2 filas con altura fija
             gap: "10px",
-            margin: "0 auto",
+            margin: "100px auto 490px auto",
           }}
         >
           {/* Primera fila */}
-          <div style={{ background: "#ddd" }}>
-            <Image src="/vercel.svg" alt="Proyecto" width={100} height={100} />
+          <div
+            style={{
+              padding: "10px",
+              textAlign: "center",
+              borderRadius: "10px",
+            }}
+          >
+            <p
+              style={{
+                fontSize: "24px",
+                fontWeight: "bold",
+                marginBottom: "10px",
+              }}
+            >
+              SOLUCIONES INDIVIDUALES ZNI
+            </p>
+
+            <Image src="/isologo1.png" alt="Isologo" width={300} height={300} />
+            <div
+              style={{
+                width: "75%",
+                height: "7px",
+                backgroundColor: "white",
+                margin: "10px auto",
+              }}
+            ></div>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                gap: "10px",
+                marginTop: "5px",
+              }}
+            >
+              <div style={{ textAlign: "center" }}>
+                <i
+                  className="bi bi-database-fill"
+                  style={{ fontSize: "32px", color: "#007bff" }}
+                ></i>
+                <p style={{ fontSize: "16px", marginTop: "2px" }}>METAL</p>
+              </div>
+
+              <div style={{ textAlign: "center" }}>
+                <i
+                  className="bi bi-database-fill"
+                  style={{ fontSize: "32px", color: "#007bff" }}
+                ></i>
+                <p style={{ fontSize: "16px", marginTop: "2px" }}>PRFV</p>
+              </div>
+            </div>
+          </div>
+
+          <div></div>
+          <div
+            style={{
+              padding: "10px",
+              textAlign: "center",
+              borderRadius: "10px",
+            }}
+          >
+            <p
+              style={{
+                fontSize: "24px",
+                fontWeight: "bold",
+                marginBottom: "10px",
+              }}
+            >
+              POSTES DE ILUMINACIÓN
+            </p>
+
+            <Image src="/isologo2.png" alt="Isologo" width={300} height={300} />
+            <div
+              style={{
+                width: "75%",
+                height: "7px",
+                backgroundColor: "white",
+                margin: "10px auto",
+              }}
+            ></div>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                gap: "10px",
+                marginTop: "5px",
+              }}
+            >
+              <div style={{ textAlign: "center" }}>
+                <i
+                  className="bi bi-database-fill"
+                  style={{ fontSize: "32px", color: "#007bff" }}
+                ></i>
+                <p style={{ fontSize: "16px", marginTop: "2px" }}>METAL</p>
+              </div>
+
+              <div style={{ textAlign: "center" }}>
+                <i
+                  className="bi bi-database-fill"
+                  style={{ fontSize: "32px", color: "#007bff" }}
+                ></i>
+                <p style={{ fontSize: "16px", marginTop: "2px" }}>PRFV</p>
+              </div>
+            </div>
           </div>
           <div></div>
-          <div style={{ background: "#ddd" }}>
-            <Image src="/vercel.svg" alt="Proyecto" width={100} height={100} />
-          </div>
-          <div></div>
-          <div style={{ background: "#ddd" }}>
-            <Image src="/vercel.svg" alt="Proyecto" width={100} height={100} />
+          <div
+            style={{
+              padding: "10px",
+              textAlign: "center",
+              borderRadius: "10px",
+            }}
+          >
+            <p
+              style={{
+                fontSize: "24px",
+                fontWeight: "bold",
+                marginBottom: "10px",
+              }}
+            >
+              GRANJAS SOLARES
+            </p>
+
+            <Image src="/isologo3.png" alt="Isologo" width={300} height={300} />
+            <div
+              style={{
+                width: "75%",
+                height: "7px",
+                backgroundColor: "white",
+                margin: "10px auto",
+              }}
+            ></div>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                gap: "10px",
+                marginTop: "5px",
+              }}
+            >
+              <div style={{ textAlign: "center" }}>
+                <i
+                  className="bi bi-database-fill"
+                  style={{ fontSize: "32px", color: "#007bff" }}
+                ></i>
+                <p style={{ fontSize: "16px", marginTop: "2px" }}>
+                  METAL GALVANIZADO <br></br> EN CALIENTE
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* Segunda fila */}
           <div></div>
-          <div style={{ background: "#ddd" }}>
-            <Image src="/vercel.svg" alt="Proyecto" width={100} height={100} />
+          <div
+            style={{
+              padding: "10px",
+              textAlign: "center",
+              borderRadius: "10px",
+              marginTop: "130px",
+            }}
+          >
+            <p
+              style={{
+                fontSize: "24px",
+                fontWeight: "bold",
+                marginBottom: "10px",
+              }}
+            >
+              ESTRUCTURA AGROFOTOVALTAICA
+            </p>
+
+            <Image src="/isologo4.png" alt="Isologo" width={300} height={300} />
+            <div
+              style={{
+                width: "75%",
+                height: "7px",
+                backgroundColor: "white",
+                margin: "10px auto",
+              }}
+            ></div>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                gap: "10px",
+                marginTop: "5px",
+              }}
+            >
+              <div style={{ textAlign: "center" }}>
+                <i
+                  className="bi bi-database-fill"
+                  style={{ fontSize: "32px", color: "#007bff" }}
+                ></i>
+                <p style={{ fontSize: "16px", marginTop: "2px" }}>
+                  METAL GALVANIZADO <br></br> EN CALIENTE
+                </p>
+              </div>
+            </div>
           </div>
           <div></div>
-          <div style={{ background: "#ddd" }}>
-            <Image src="/vercel.svg" alt="Proyecto" width={100} height={100} />
+          <div
+            style={{
+              padding: "10px",
+              textAlign: "center",
+              borderRadius: "10px",
+              marginTop: "130px",
+            }}
+          >
+            <p
+              style={{
+                fontSize: "24px",
+                fontWeight: "bold",
+                marginBottom: "10px",
+              }}
+            >
+              POSTES DE DISTRIBUCIÓN REDES ELÉCTRICAS
+            </p>
+
+            <Image src="/isologo5.png" alt="Isologo" width={300} height={300} />
+            <div
+              style={{
+                width: "75%",
+                height: "7px",
+                backgroundColor: "white",
+                margin: "10px auto",
+              }}
+            ></div>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                gap: "10px",
+                marginTop: "5px",
+              }}
+            >
+              <div style={{ textAlign: "center" }}>
+                <i
+                  className="bi bi-database-fill"
+                  style={{ fontSize: "32px", color: "#007bff" }}
+                ></i>
+                <p style={{ fontSize: "16px", marginTop: "2px" }}>METAL</p>
+              </div>
+
+              <div style={{ textAlign: "center" }}>
+                <i
+                  className="bi bi-database-fill"
+                  style={{ fontSize: "32px", color: "#007bff" }}
+                ></i>
+                <p style={{ fontSize: "16px", marginTop: "2px" }}>PRFV</p>
+              </div>
+            </div>
           </div>
           <div></div>
         </div>
@@ -87,29 +318,101 @@ export default function Home() {
           background: "white",
           borderRadius: "150px",
           padding: "30px 50px",
-          margin: "50px auto", // Centra y separa de los extremos
-          maxWidth: "90%", // Evita que llegue a los extremos de la pantalla
-          boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)", // Agrega un leve sombreado
+          margin: "50px auto",
+          maxWidth: "90%",
+          boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
+          textAlign: "center",
         }}
       >
         <div
           style={{
-            display: "flex",
-            justifyContent: "space-between", // Ubica los números a la izquierda, centro y derecha
-            textAlign: "center",
+            display: "grid",
+            gridTemplateColumns: "repeat(5, 1fr)",
+            gap: "10px",
           }}
         >
-          <h2 style={{ fontSize: "48px", fontWeight: "bold", color: "red" }}>
-            40,000+
-          </h2>
-          <h2 style={{ fontSize: "48px", fontWeight: "bold", color: "red" }}>
-            35,000+
-          </h2>
-          <h2 style={{ fontSize: "48px", fontWeight: "bold", color: "red" }}>
-            9,000+
-          </h2>
+          <div>
+            <h2
+              style={{
+                fontSize: "48px",
+                fontWeight: "bold",
+                color: "red",
+                marginBottom: "5px",
+              }}
+            >
+              + 40.000
+            </h2>
+            <h3 style={{ fontSize: "20px", fontWeight: "bold", color: "blue" }}>
+              POSTE PANEL
+            </h3>
+          </div>
+
+          <div>
+            <h2
+              style={{
+                fontSize: "48px",
+                fontWeight: "bold",
+                color: "red",
+                marginBottom: "5px",
+              }}
+            >
+              + 35.000
+            </h2>
+            <h3 style={{ fontSize: "20px", fontWeight: "bold", color: "blue" }}>
+              ALUMBRADO PÚBLICO
+            </h3>
+          </div>
+
+          <div>
+            <h2
+              style={{
+                fontSize: "48px",
+                fontWeight: "bold",
+                color: "red",
+                marginBottom: "5px",
+              }}
+            >
+              + 9.000
+            </h2>
+            <h3 style={{ fontSize: "20px", fontWeight: "bold", color: "blue" }}>
+              DISTRIBUCIÓN
+            </h3>
+          </div>
+
+          <div>
+            <h2
+              style={{
+                fontSize: "48px",
+                fontWeight: "bold",
+                color: "red",
+                marginBottom: "5px",
+              }}
+            >
+              + 5.000
+            </h2>
+            <h3 style={{ fontSize: "20px", fontWeight: "bold", color: "blue" }}>
+              POSTES FIBRA
+            </h3>
+          </div>
+
+          <div>
+            <h2
+              style={{
+                fontSize: "48px",
+                fontWeight: "bold",
+                color: "red",
+                marginBottom: "5px",
+              }}
+            >
+              + 350.000
+            </h2>
+            <h3 style={{ fontSize: "20px", fontWeight: "bold", color: "blue" }}>
+              BRAZOS PARA LUMINARIA
+            </h3>
+          </div>
         </div>
       </div>
+
       <Ubicanos />
     </main>
   );
