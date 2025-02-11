@@ -12,8 +12,8 @@ const Header = () => {
             <Image
               src="/logo.png"
               alt="Logo"
-              height={100} // Altura fija
-              width={294} // Ajusta según proporciones
+              height={70} // Altura fija
+              width={205} // Ajusta según proporciones
             />
           </Link>
         </div>

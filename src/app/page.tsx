@@ -6,16 +6,24 @@ export default function Home() {
   return (
     <main>
       {/* Video */}
-      <div style={{ position: "relative", width: "100%", overflow: "hidden" }}>
+      <div
+        style={{
+          position: "relative",
+          width: "100%",
+          overflow: "hidden",
+          height: "590px",
+        }}
+      >
         <video
-          src="/videos/presentacion.mp4" // Ruta del video en public/videos
+          src="/videos/presentacion.mp4"
           autoPlay
           loop
           muted
           playsInline
           style={{
             width: "100%",
-            height: "auto",
+            height: "100%", // Mantiene el alto fijo del contenedor
+            objectFit: "cover", // Recorta el video para ajustarse al contenedor
             display: "block",
           }}
         />
@@ -26,11 +34,16 @@ export default function Home() {
         style={{
           padding: "50px",
           textAlign: "right",
-          background: "rgba(0, 0, 0, 0.7)",
-          color: "white", // Asegura que el texto sea legible
+          background: "rgba(0, 0, 0, 0.7)", // Capa oscura semitransparente
+          color: "white",
+          backgroundImage: "url('/background-footer-2.jpg')", // Ruta de la imagen
+          backgroundSize: "cover", // Asegura que la imagen cubra todo el contenedor
+          backgroundPosition: "center top -980px", // Muestra la parte superior de la imagen
+          backgroundRepeat: "no-repeat", // Evita que la imagen se repita
+          width: "100%", // Ocupa todo el ancho de la pantalla
         }}
       >
-        <h1 style={{ fontSize: "48px", fontWeight: "bold", lineHeight: "1.2" }}>
+        <h1 style={{ fontSize: "41px", fontWeight: "bold", lineHeight: "1.2" }}>
           Fabricamos la mejor solución para su <br /> proyecto
         </h1>
       </div>
@@ -55,6 +68,7 @@ export default function Home() {
             gridTemplateRows: "repeat(2, 150px)", // 2 filas con altura fija
             gap: "10px",
             margin: "100px auto 490px auto",
+            maxWidth: "100%",
           }}
         >
           {/* Primera fila */}
@@ -336,13 +350,15 @@ export default function Home() {
               style={{
                 fontSize: "48px",
                 fontWeight: "bold",
-                color: "red",
+                color: "#E52521",
                 marginBottom: "5px",
               }}
             >
               + 40.000
             </h2>
-            <h3 style={{ fontSize: "20px", fontWeight: "bold", color: "blue" }}>
+            <h3
+              style={{ fontSize: "20px", fontWeight: "bold", color: "#232856" }}
+            >
               POSTE PANEL
             </h3>
           </div>
@@ -352,13 +368,15 @@ export default function Home() {
               style={{
                 fontSize: "48px",
                 fontWeight: "bold",
-                color: "red",
+                color: "#E52521",
                 marginBottom: "5px",
               }}
             >
               + 35.000
             </h2>
-            <h3 style={{ fontSize: "20px", fontWeight: "bold", color: "blue" }}>
+            <h3
+              style={{ fontSize: "20px", fontWeight: "bold", color: "#232856" }}
+            >
               ALUMBRADO PÚBLICO
             </h3>
           </div>
@@ -368,13 +386,15 @@ export default function Home() {
               style={{
                 fontSize: "48px",
                 fontWeight: "bold",
-                color: "red",
+                color: "#E52521",
                 marginBottom: "5px",
               }}
             >
               + 9.000
             </h2>
-            <h3 style={{ fontSize: "20px", fontWeight: "bold", color: "blue" }}>
+            <h3
+              style={{ fontSize: "20px", fontWeight: "bold", color: "#232856" }}
+            >
               DISTRIBUCIÓN
             </h3>
           </div>
@@ -384,13 +404,15 @@ export default function Home() {
               style={{
                 fontSize: "48px",
                 fontWeight: "bold",
-                color: "red",
+                color: "#E52521",
                 marginBottom: "5px",
               }}
             >
               + 5.000
             </h2>
-            <h3 style={{ fontSize: "20px", fontWeight: "bold", color: "blue" }}>
+            <h3
+              style={{ fontSize: "20px", fontWeight: "bold", color: "#232856" }}
+            >
               POSTES FIBRA
             </h3>
           </div>
@@ -400,13 +422,15 @@ export default function Home() {
               style={{
                 fontSize: "48px",
                 fontWeight: "bold",
-                color: "red",
+                color: "#E52521",
                 marginBottom: "5px",
               }}
             >
               + 350.000
             </h2>
-            <h3 style={{ fontSize: "20px", fontWeight: "bold", color: "blue" }}>
+            <h3
+              style={{ fontSize: "20px", fontWeight: "bold", color: "#232856" }}
+            >
               BRAZOS PARA LUMINARIA
             </h3>
           </div>

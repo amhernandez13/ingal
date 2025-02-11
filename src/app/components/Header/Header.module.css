@@ -4,8 +4,11 @@
     left: 0;
     width: 100%; /* Ocupa todo el ancho */
     color: white;
-    padding: 1rem;
+    padding: 15px 1rem;
     z-index: 1000; /* Asegura que esté por encima del video */
+    background-color: rgba(35, 40, 86, 0.7);
+    backdrop-filter: blur(3px);
+    font-size: 17.5px;
   }
   
   .container {
@@ -28,6 +31,6 @@
   }
   
   .nav a:hover {
-    color: red;
+    color: #E52521;
   }
   
