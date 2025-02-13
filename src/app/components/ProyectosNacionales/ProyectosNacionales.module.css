@@ -1,0 +1,97 @@
+.container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #292662; /* Ajusta según tu diseño */
+}
+
+
+/* Título */
+.title {
+  font-size: clamp(18px, 2.5vw, 24px);
+  font-weight: bold;
+  margin: 50px 0;
+  text-align: left;
+  color: #fff; /* Si tu fondo es oscuro */
+}
+
+/* Grilla de 5 columnas y 2 filas fijas */
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.card {
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Título de la tarjeta */
+.cardTitle {
+  font-size: clamp(16px, 2vw, 24px);
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+.divider {
+  width: 75%;
+  height: 7px;
+  background-color: white;
+  margin: 10px auto;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.iconItem {
+  text-align: center;
+}
+
+.icon {
+  font-size: clamp(24px, 4vw, 32px);
+  color: #007bff;
+}
+
+.iconText {
+  font-size: clamp(14px, 2vw, 16px);
+  margin-top: 2px;
+  color: #fff;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+/* Contenedor para la imagen: forzamos dimensiones fijas */
+.imageWrapper {
+  width: 100%;
+  max-width: 300px; /* Ancho máximo uniforme para todas las imágenes */
+  height: 300px;    /* Altura fija para forzar la misma proporción */
+  margin: 0 auto;
+  position: relative;
+  /* Evita que la imagen agrandada se desborde */
+}
+
+/* Estilo para la imagen */
+.responsiveImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* La imagen se ajusta sin distorsionarse */
+  display: block;
+  transition: transform 0.3s ease;  /* Transición suave para el escalado */
+}
+
+/* Efecto hover: agranda la imagen un poco */
+.responsiveImage:hover {
+  transform: scale(1.1);
+}
