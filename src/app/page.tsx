@@ -1,9 +1,19 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./page.module.css";
 import Ubicanos from "./components/Ubicanos/Ubicanos";
 import OurProjects from "./components/ProyectosNacionales/ProyectosNacionales";
+import Contactanos from "./components/Contactanos/Contactanos";
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
 
 export default function Home() {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.3,
+  });
+
   return (
     <main>
       {/* Video */}
@@ -23,8 +33,8 @@ export default function Home() {
           playsInline
           style={{
             width: "100%",
-            height: "100%", // Mantiene el alto fijo del contenedor
-            objectFit: "cover", // Recorta el video para ajustarse al contenedor
+            height: "100%",
+            objectFit: "cover",
             display: "block",
           }}
         />
@@ -35,21 +45,25 @@ export default function Home() {
         style={{
           padding: "50px",
           textAlign: "right",
-          background: "rgba(0, 0, 0, 0.7)", // Capa oscura semitransparente
+          background: "rgba(0, 0, 0, 0.7)",
           color: "white",
-          backgroundImage: "url('/background-footer-2.jpg')", // Ruta de la imagen
-          backgroundSize: "cover", // Asegura que la imagen cubra todo el contenedor
-          backgroundPosition: "top", // Muestra la parte superior de la imagen
-          backgroundRepeat: "no-repeat", // Evita que la imagen se repita
-          width: "100%", // Ocupa todo el ancho de la pantalla
+          backgroundImage: "url('/background-footer-2.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "top",
+          backgroundRepeat: "no-repeat",
+          width: "100%",
         }}
       >
         <h1 style={{ fontSize: "41px", fontWeight: "bold", lineHeight: "1.2" }}>
           Fabricamos la mejor solución para su <br /> proyecto
         </h1>
       </div>
+
       <OurProjects />
+
+      {/* Sección de números animados */}
       <div
+        ref={ref}
         style={{
           background: "white",
           borderRadius: "150px",
@@ -76,7 +90,11 @@ export default function Home() {
                 marginBottom: "5px",
               }}
             >
-              + 40.000
+              {inView ? (
+                <CountUp start={0} end={40000} duration={2.5} prefix="+" />
+              ) : (
+                "+0"
+              )}
             </h2>
             <h3
               style={{ fontSize: "20px", fontWeight: "bold", color: "#232856" }}
@@ -94,7 +112,11 @@ export default function Home() {
                 marginBottom: "5px",
               }}
             >
-              + 35.000
+              {inView ? (
+                <CountUp start={0} end={35000} duration={2.5} prefix="+" />
+              ) : (
+                "+0"
+              )}
             </h2>
             <h3
               style={{ fontSize: "20px", fontWeight: "bold", color: "#232856" }}
@@ -112,7 +134,11 @@ export default function Home() {
                 marginBottom: "5px",
               }}
             >
-              + 9.000
+              {inView ? (
+                <CountUp start={0} end={9000} duration={2.5} prefix="+" />
+              ) : (
+                "+0"
+              )}
             </h2>
             <h3
               style={{ fontSize: "20px", fontWeight: "bold", color: "#232856" }}
@@ -130,7 +156,11 @@ export default function Home() {
                 marginBottom: "5px",
               }}
             >
-              + 5.000
+              {inView ? (
+                <CountUp start={0} end={5000} duration={2.5} prefix="+" />
+              ) : (
+                "+0"
+              )}
             </h2>
             <h3
               style={{ fontSize: "20px", fontWeight: "bold", color: "#232856" }}
@@ -148,7 +178,11 @@ export default function Home() {
                 marginBottom: "5px",
               }}
             >
-              + 350.000
+              {inView ? (
+                <CountUp start={0} end={350000} duration={2.5} prefix="+" />
+              ) : (
+                "+0"
+              )}
             </h2>
             <h3
               style={{ fontSize: "20px", fontWeight: "bold", color: "#232856" }}
@@ -158,8 +192,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       <Ubicanos />
+      <Contactanos />
     </main>
   );
 }
