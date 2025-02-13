@@ -1,7 +1,6 @@
 "use client";
 
-import Image from "next/image";
-import styles from "./page.module.css";
+//import styles from "./page.module.css";
 import Ubicanos from "./components/Ubicanos/Ubicanos";
 import OurProjects from "./components/ProyectosNacionales/ProyectosNacionales";
 import Contactanos from "./components/Contactanos/Contactanos";
