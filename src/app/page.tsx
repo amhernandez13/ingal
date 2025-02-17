@@ -1,9 +1,9 @@
 "use client";
 
-//import styles from "./page.module.css";
 import Ubicanos from "./components/Ubicanos/Ubicanos";
 import OurProjects from "./components/ProyectosNacionales/ProyectosNacionales";
 import Contactanos from "./components/Contactanos/Contactanos";
+import Servicios from "./components/Servicios/Servicios";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 
@@ -46,7 +46,7 @@ export default function Home() {
           textAlign: "right",
           background: "rgba(0, 0, 0, 0.7)",
           color: "white",
-          backgroundImage: "url('/background-footer-2.jpg')",
+          backgroundImage: "url('/background-footer.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "top",
           backgroundRepeat: "no-repeat",
@@ -191,6 +191,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Servicios />
       <Ubicanos />
       <Contactanos />
     </main>
