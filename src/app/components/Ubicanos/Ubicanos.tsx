@@ -14,7 +14,12 @@ const Ubicanos = () => {
       {/* Sección Izquierda */}
       <div style={{ width: "25%", textAlign: "center" }}>
         <h2
-          style={{ fontSize: "24px", fontWeight: "bold", marginBottom: "10px" }}
+          style={{
+            fontSize: "24px",
+            fontWeight: "bold",
+            marginBottom: "10px",
+            fontFamily: "Neuropolitical RG",
+          }}
         >
           Ubícanos
         </h2>

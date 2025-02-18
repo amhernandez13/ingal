@@ -44,16 +44,23 @@ export default function Home() {
         style={{
           padding: "50px",
           textAlign: "right",
-          background: "rgba(0, 0, 0, 0.7)",
+          backgroundColor: "rgba(0, 0, 0, 0.7)",
           color: "white",
-          backgroundImage: "url('/background-footer.jpg')",
+          backgroundImage: "url('/postes.webp')",
           backgroundSize: "cover",
           backgroundPosition: "top",
           backgroundRepeat: "no-repeat",
           width: "100%",
         }}
       >
-        <h1 style={{ fontSize: "41px", fontWeight: "bold", lineHeight: "1.2" }}>
+        <h1
+          style={{
+            fontSize: "36px",
+            fontWeight: "bold",
+            lineHeight: "1.2",
+            fontFamily: "Neuropolitical RG",
+          }}
+        >
           Fabricamos la mejor solución para su <br /> proyecto
         </h1>
       </div>
@@ -96,7 +103,12 @@ export default function Home() {
               )}
             </h2>
             <h3
-              style={{ fontSize: "20px", fontWeight: "bold", color: "#232856" }}
+              style={{
+                fontSize: "20px",
+                fontWeight: "bold",
+                color: "#232856",
+                fontFamily: "Neuropolitical RG",
+              }}
             >
               POSTE PANEL
             </h3>
@@ -118,7 +130,12 @@ export default function Home() {
               )}
             </h2>
             <h3
-              style={{ fontSize: "20px", fontWeight: "bold", color: "#232856" }}
+              style={{
+                fontSize: "20px",
+                fontWeight: "bold",
+                color: "#232856",
+                fontFamily: "Neuropolitical RG",
+              }}
             >
               ALUMBRADO PÚBLICO
             </h3>
@@ -140,7 +157,12 @@ export default function Home() {
               )}
             </h2>
             <h3
-              style={{ fontSize: "20px", fontWeight: "bold", color: "#232856" }}
+              style={{
+                fontSize: "20px",
+                fontWeight: "bold",
+                color: "#232856",
+                fontFamily: "Neuropolitical RG",
+              }}
             >
               DISTRIBUCIÓN
             </h3>
@@ -162,7 +184,12 @@ export default function Home() {
               )}
             </h2>
             <h3
-              style={{ fontSize: "20px", fontWeight: "bold", color: "#232856" }}
+              style={{
+                fontSize: "20px",
+                fontWeight: "bold",
+                color: "#232856",
+                fontFamily: "Neuropolitical RG",
+              }}
             >
               POSTES FIBRA
             </h3>
@@ -184,7 +211,12 @@ export default function Home() {
               )}
             </h2>
             <h3
-              style={{ fontSize: "20px", fontWeight: "bold", color: "#232856" }}
+              style={{
+                fontSize: "20px",
+                fontWeight: "bold",
+                color: "#232856",
+                fontFamily: "Neuropolitical RG",
+              }}
             >
               BRAZOS PARA LUMINARIA
             </h3>

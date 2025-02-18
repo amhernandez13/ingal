@@ -1,8 +1,26 @@
+/* Aseguramos que el contenedor sea relativo para posicionar el fondo */
 .container {
+  position: relative;
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
 }
+
+/* Imagen de fondo */
+.backgroundImage {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background-image: url("/isologo-half.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+  opacity: 0.5; /* Transparencia: 0 (transparente) a 1 (opaco) */
+  z-index: -1; /* Para que quede detrás del contenido */
+}
+
 
 
 /* Título */
@@ -10,8 +28,10 @@
   font-size: clamp(18px, 2.5vw, 24px);
   font-weight: bold;
   margin: 50px 0;
+  margin-bottom: 70px;
   text-align: left;
-  color: #fff; /* Si tu fondo es oscuro */
+  color: #fff;
+  font-family: "Neuropolitical RG", sans-serif;
 }
 
 /* Grilla de 5 columnas y 2 filas fijas */
