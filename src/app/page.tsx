@@ -68,6 +68,18 @@ export default function Home() {
       <OurProjects />
 
       {/* Sección de números animados */}
+      {/* Título superior */}
+      <h2
+        style={{
+          fontSize: "45px",
+          marginTop: "70px",
+          marginBottom: "-25px",
+          textAlign: "center",
+          fontFamily: "'Franklin Gothic', sans-serif",
+        }}
+      >
+        Ingal en cifras
+      </h2>
       <div
         ref={ref}
         style={{
@@ -78,6 +90,7 @@ export default function Home() {
           maxWidth: "90%",
           boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
           textAlign: "center",
+          fontFamily: "'Franklin Gothic', sans-serif",
         }}
       >
         <div
@@ -97,7 +110,13 @@ export default function Home() {
               }}
             >
               {inView ? (
-                <CountUp start={0} end={40000} duration={2.5} prefix="+" />
+                <CountUp
+                  start={0}
+                  end={40000}
+                  duration={2.5}
+                  prefix="+"
+                  separator="."
+                />
               ) : (
                 "+0"
               )}
@@ -124,7 +143,13 @@ export default function Home() {
               }}
             >
               {inView ? (
-                <CountUp start={0} end={35000} duration={2.5} prefix="+" />
+                <CountUp
+                  start={0}
+                  end={35000}
+                  duration={2.5}
+                  prefix="+"
+                  separator="."
+                />
               ) : (
                 "+0"
               )}
@@ -151,7 +176,13 @@ export default function Home() {
               }}
             >
               {inView ? (
-                <CountUp start={0} end={9000} duration={2.5} prefix="+" />
+                <CountUp
+                  start={0}
+                  end={9000}
+                  duration={2.5}
+                  prefix="+"
+                  separator="."
+                />
               ) : (
                 "+0"
               )}
@@ -178,7 +209,13 @@ export default function Home() {
               }}
             >
               {inView ? (
-                <CountUp start={0} end={5000} duration={2.5} prefix="+" />
+                <CountUp
+                  start={0}
+                  end={5000}
+                  duration={2.5}
+                  prefix="+"
+                  separator="."
+                />
               ) : (
                 "+0"
               )}
@@ -205,7 +242,13 @@ export default function Home() {
               }}
             >
               {inView ? (
-                <CountUp start={0} end={350000} duration={2.5} prefix="+" />
+                <CountUp
+                  start={0}
+                  end={350000}
+                  duration={2.5}
+                  prefix="+"
+                  separator="."
+                />
               ) : (
                 "+0"
               )}
@@ -223,6 +266,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <Servicios />
       <Ubicanos />
       <Contactanos />

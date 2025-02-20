@@ -32,7 +32,13 @@ export default function Footer() {
             justifyContent: "center",
           }}
         >
-          <p style={{ lineHeight: "1.5", margin: 0 }}>
+          <p
+            style={{
+              lineHeight: "1.5",
+              margin: 0,
+              fontFamily: "'Franklin Gothic', sans-serif",
+            }}
+          >
             Somos una empresa vallecaucana, fabricación de postes metálicos para
             iluminación y distribución eléctrica, estructuras solares.
           </p>
@@ -130,7 +136,6 @@ export default function Footer() {
                 justifyContent: "center",
                 width: "40px",
                 height: "40px",
-                backgroundColor: "rgba(0, 0, 0, 0.5)",
                 color: "#fff",
                 borderRadius: "4px",
                 textDecoration: "none",
@@ -150,7 +155,6 @@ export default function Footer() {
                 justifyContent: "center",
                 width: "40px",
                 height: "40px",
-                backgroundColor: "rgba(0, 0, 0, 0.5)",
                 color: "#fff",
                 borderRadius: "4px",
                 textDecoration: "none",
@@ -170,7 +174,6 @@ export default function Footer() {
                 justifyContent: "center",
                 width: "40px",
                 height: "40px",
-                backgroundColor: "rgba(0, 0, 0, 0.5)",
                 color: "#fff",
                 borderRadius: "4px",
                 textDecoration: "none",
@@ -190,7 +193,6 @@ export default function Footer() {
                 justifyContent: "center",
                 width: "40px",
                 height: "40px",
-                backgroundColor: "rgba(0, 0, 0, 0.5)",
                 color: "#fff",
                 borderRadius: "4px",
                 textDecoration: "none",

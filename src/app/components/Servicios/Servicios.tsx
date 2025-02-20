@@ -5,23 +5,35 @@ import Image from "next/image";
 
 export default function Servicios() {
   return (
-    <section style={{ padding: "40px 20px", textAlign: "center" }}>
-      <h2 style={{ fontSize: "45px", marginBottom: "20px" }}>
-        Nuestros servicios
-      </h2>
-      <p
-        style={{
-          maxWidth: "1000px",
-          margin: "0 auto 60px auto", // mayor separación del contenido inferior
-          fontSize: "20px",
-          lineHeight: "1.5",
-        }}
+    <section style={{ padding: "40px 0px", textAlign: "center" }}>
+      <div
+        style={{ backgroundColor: "#211E55", padding: "10px", width: "100%" }}
       >
-        Ofrecemos soluciones integrales, proporcionando productos de alta
-        calidad como estructuras para paneles solares, postes de fibra de vidrio
-        y metálicos, herrajes eléctricos y brazos mecánicos, garantizando
-        durabilidad, resistencia y eficiencia.
-      </p>
+        <h2
+          style={{
+            fontSize: "45px",
+            marginBottom: "20px",
+            fontFamily: "'Franklin Gothic', sans-serif",
+          }}
+        >
+          Nuestros productos y servicios
+        </h2>
+        <p
+          style={{
+            maxWidth: "1000px",
+            margin: "0 auto 10px auto",
+            fontSize: "20px",
+            lineHeight: "1.5",
+            fontFamily: "'Franklin Gothic', sans-serif",
+          }}
+        >
+          Ofrecemos soluciones integrales, proporcionando productos de alta
+          calidad como estructuras para paneles solares, postes de fibra de
+          vidrio y metálicos, herrajes eléctricos, brazos para luminaria y
+          galvanizado por inmersión en caliente, garantizando durabilidad,
+          resistencia y eficiencia.
+        </p>
+      </div>
 
       <div
         style={{
@@ -29,6 +41,8 @@ export default function Servicios() {
           gridTemplateColumns: "repeat(3, 1fr)",
           gap: "20px",
           marginTop: "40px",
+          marginLeft: "40px",
+          marginRight: "40px",
         }}
       >
         <div style={{ padding: "20px 0" }}>
@@ -39,7 +53,14 @@ export default function Servicios() {
             height={712}
             style={{ width: "auto", height: "250px" }}
           />
-          <h4 style={{ fontSize: "24px", color: "#E52521", marginTop: "20px" }}>
+          <h4
+            style={{
+              fontSize: "24px",
+              color: "#E52521",
+              marginTop: "20px",
+              fontFamily: "'Franklin Gothic', sans-serif",
+            }}
+          >
             Estructuras Solares
           </h4>
         </div>
@@ -52,7 +73,14 @@ export default function Servicios() {
             height={1182}
             style={{ width: "auto", height: "250px" }}
           />
-          <h4 style={{ fontSize: "24px", color: "#E52521", marginTop: "20px" }}>
+          <h4
+            style={{
+              fontSize: "24px",
+              color: "#E52521",
+              marginTop: "20px",
+              fontFamily: "'Franklin Gothic', sans-serif",
+            }}
+          >
             Postes Metálicos
           </h4>
         </div>
@@ -65,7 +93,14 @@ export default function Servicios() {
             height={1182}
             style={{ width: "auto", height: "250px" }}
           />
-          <h4 style={{ fontSize: "24px", color: "#E52521", marginTop: "20px" }}>
+          <h4
+            style={{
+              fontSize: "24px",
+              color: "#E52521",
+              marginTop: "20px",
+              fontFamily: "'Franklin Gothic', sans-serif",
+            }}
+          >
             Postes en PRFV
           </h4>
         </div>
@@ -78,7 +113,14 @@ export default function Servicios() {
             height={828}
             style={{ width: "auto", height: "250px" }}
           />
-          <h4 style={{ fontSize: "24px", color: "#E52521", marginTop: "20px" }}>
+          <h4
+            style={{
+              fontSize: "24px",
+              color: "#E52521",
+              marginTop: "20px",
+              fontFamily: "'Franklin Gothic', sans-serif",
+            }}
+          >
             Galvanizado en Caliente
           </h4>
         </div>
@@ -91,7 +133,14 @@ export default function Servicios() {
             height={5238}
             style={{ width: "auto", height: "250px" }}
           />
-          <h4 style={{ fontSize: "24px", color: "#E52521", marginTop: "20px" }}>
+          <h4
+            style={{
+              fontSize: "24px",
+              color: "#E52521",
+              marginTop: "20px",
+              fontFamily: "'Franklin Gothic', sans-serif",
+            }}
+          >
             Brazos para Iluminación
           </h4>
         </div>
@@ -104,7 +153,14 @@ export default function Servicios() {
             height={650}
             style={{ width: "auto", height: "250px" }}
           />
-          <h4 style={{ fontSize: "24px", color: "#E52521", marginTop: "20px" }}>
+          <h4
+            style={{
+              fontSize: "24px",
+              color: "#E52521",
+              marginTop: "20px",
+              fontFamily: "'Franklin Gothic', sans-serif",
+            }}
+          >
             Herrajes Eléctricos
           </h4>
         </div>

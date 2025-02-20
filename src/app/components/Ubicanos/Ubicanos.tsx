@@ -9,6 +9,7 @@ const Ubicanos = () => {
         padding: "30px",
         margin: "50px auto",
         maxWidth: "80%",
+        gap: "40px",
       }}
     >
       {/* Sección Izquierda */}
@@ -23,10 +24,37 @@ const Ubicanos = () => {
         >
           Ubícanos
         </h2>
-        <i
-          className="bi bi-geo-alt"
-          style={{ fontSize: "40px", color: "white" }}
-        ></i>
+        <span className="jump" style={{ marginTop: "6px" }}>
+          <i
+            className="bi bi-geo-alt"
+            style={{ fontSize: "40px", color: "#E52521" }}
+          ></i>
+        </span>
+        <p
+          style={{
+            fontFamily: "'Libre Franklin', sans-serif",
+            fontSize: "16px",
+            color: "#fff",
+            marginTop: "10px",
+          }}
+        >
+          Cl. 3 #4, La Dolores, Cali, Palmira, Valle del Cauca.
+        </p>
+        <style jsx global>{`
+          .jump {
+            display: inline-block;
+            animation: jump 1s infinite;
+          }
+          @keyframes jump {
+            0%,
+            100% {
+              transform: translateY(0);
+            }
+            50% {
+              transform: translateY(-10px);
+            }
+          }
+        `}</style>
       </div>
 
       {/* Sección Derecha - Google Maps */}
