@@ -68,7 +68,7 @@ export default function QuienesSomos() {
           className={styles.bannerImage}
         />
         <h1 className={styles.title}>
-          INGENIERÍA EN GALVANIZADO DE OCCIDENTE SAS
+          INGENIERÍA EN GALVANIZADOS DE OCCIDENTE SAS
         </h1>
       </div>
 

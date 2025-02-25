@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ingeniería Galvanizados de Occidente",
+  title: "Ingal de Occidente",
   description:
     "Somos una empresa vallecaucana, fabricación de postes metálicos para iluminación y distribución eléctrica, estructuras solares.",
 };

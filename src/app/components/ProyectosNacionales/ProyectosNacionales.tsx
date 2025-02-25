@@ -92,11 +92,7 @@ const ProyectosNacionales = () => {
 
         {/* Fila 2, Col 2 */}
         <div className={styles.card}>
-          <p className={styles.cardTitle}>
-            ESTRUCTURA AGROFOTO-
-            <br />
-            VOLTAICA
-          </p>
+          <p className={styles.cardTitle}>ESTRUCTURA AGROVOLTAICA</p>
           <div className={styles.imageWrapper}>
             <Image
               src="/isologo4.png"

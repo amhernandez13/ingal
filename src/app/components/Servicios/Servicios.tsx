@@ -11,7 +11,7 @@ export default function Servicios() {
       >
         <h2
           style={{
-            fontSize: "45px",
+            fontSize: "52px",
             marginBottom: "20px",
             fontFamily: "'Franklin Gothic', sans-serif",
           }}
@@ -22,7 +22,7 @@ export default function Servicios() {
           style={{
             maxWidth: "1000px",
             margin: "0 auto 10px auto",
-            fontSize: "20px",
+            fontSize: "26px",
             lineHeight: "1.5",
             fontFamily: "'Franklin Gothic', sans-serif",
           }}
@@ -45,7 +45,7 @@ export default function Servicios() {
           marginRight: "40px",
         }}
       >
-        <div style={{ padding: "20px 0" }}>
+        <div className="serviceItem" style={{ padding: "20px 0" }}>
           <Image
             src="/servicios/estructuras-solares.png"
             alt="Estructuras Solares"
@@ -56,7 +56,6 @@ export default function Servicios() {
           <h4
             style={{
               fontSize: "24px",
-              color: "#E52521",
               marginTop: "20px",
               fontFamily: "'Franklin Gothic', sans-serif",
             }}
@@ -65,7 +64,7 @@ export default function Servicios() {
           </h4>
         </div>
 
-        <div style={{ padding: "20px 0" }}>
+        <div className="serviceItem" style={{ padding: "20px 0" }}>
           <Image
             src="/servicios/postes-metalicos.png"
             alt="Postes Metálicos"
@@ -76,7 +75,6 @@ export default function Servicios() {
           <h4
             style={{
               fontSize: "24px",
-              color: "#E52521",
               marginTop: "20px",
               fontFamily: "'Franklin Gothic', sans-serif",
             }}
@@ -85,7 +83,7 @@ export default function Servicios() {
           </h4>
         </div>
 
-        <div style={{ padding: "20px 0" }}>
+        <div className="serviceItem" style={{ padding: "20px 0" }}>
           <Image
             src="/servicios/postes-prfv.png"
             alt="Postes en PRFV"
@@ -96,7 +94,6 @@ export default function Servicios() {
           <h4
             style={{
               fontSize: "24px",
-              color: "#E52521",
               marginTop: "20px",
               fontFamily: "'Franklin Gothic', sans-serif",
             }}
@@ -105,7 +102,7 @@ export default function Servicios() {
           </h4>
         </div>
 
-        <div style={{ padding: "20px 0" }}>
+        <div className="serviceItem" style={{ padding: "20px 0" }}>
           <Image
             src="/servicios/galvanizado-en-caliente.png"
             alt="Galvanizado en Caliente"
@@ -116,7 +113,6 @@ export default function Servicios() {
           <h4
             style={{
               fontSize: "24px",
-              color: "#E52521",
               marginTop: "20px",
               fontFamily: "'Franklin Gothic', sans-serif",
             }}
@@ -125,7 +121,7 @@ export default function Servicios() {
           </h4>
         </div>
 
-        <div style={{ padding: "20px 0" }}>
+        <div className="serviceItem" style={{ padding: "20px 0" }}>
           <Image
             src="/servicios/brazos-para-iluminacion.png"
             alt="Brazos para Iluminación"
@@ -136,7 +132,6 @@ export default function Servicios() {
           <h4
             style={{
               fontSize: "24px",
-              color: "#E52521",
               marginTop: "20px",
               fontFamily: "'Franklin Gothic', sans-serif",
             }}
@@ -145,7 +140,7 @@ export default function Servicios() {
           </h4>
         </div>
 
-        <div style={{ padding: "20px 0" }}>
+        <div className="serviceItem" style={{ padding: "20px 0" }}>
           <Image
             src="/servicios/herrajes-electricos.jpg"
             alt="Herrajes Eléctricos"
@@ -156,7 +151,6 @@ export default function Servicios() {
           <h4
             style={{
               fontSize: "24px",
-              color: "#E52521",
               marginTop: "20px",
               fontFamily: "'Franklin Gothic', sans-serif",
             }}
@@ -165,6 +159,22 @@ export default function Servicios() {
           </h4>
         </div>
       </div>
+
+      <style jsx>{`
+        .serviceItem {
+          transition: transform 0.3s ease;
+        }
+        .serviceItem:hover {
+          transform: scale(1.05);
+        }
+        .serviceItem h4 {
+          color: #e52521;
+          transition: color 0.3s ease;
+        }
+        .serviceItem:hover h4 {
+          color: #fff !important;
+        }
+      `}</style>
     </section>
   );
 }

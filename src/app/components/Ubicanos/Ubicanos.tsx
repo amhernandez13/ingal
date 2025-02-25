@@ -16,7 +16,7 @@ const Ubicanos = () => {
       <div style={{ width: "25%", textAlign: "center" }}>
         <h2
           style={{
-            fontSize: "24px",
+            fontSize: "40px",
             fontWeight: "bold",
             marginBottom: "10px",
             fontFamily: "Neuropolitical RG",
@@ -27,13 +27,13 @@ const Ubicanos = () => {
         <span className="jump" style={{ marginTop: "6px" }}>
           <i
             className="bi bi-geo-alt"
-            style={{ fontSize: "40px", color: "#E52521" }}
+            style={{ fontSize: "100px", color: "#E52521" }}
           ></i>
         </span>
         <p
           style={{
             fontFamily: "'Libre Franklin', sans-serif",
-            fontSize: "16px",
+            fontSize: "20px",
             color: "#fff",
             marginTop: "10px",
           }}

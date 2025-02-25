@@ -40,7 +40,8 @@ export default function Footer() {
             }}
           >
             Somos una empresa vallecaucana, fabricación de postes metálicos para
-            iluminación y distribución eléctrica, estructuras solares.
+            iluminación, distribución eléctrica, estructuras solares y
+            galvanizado por inmersión en caliente.
           </p>
         </div>
 

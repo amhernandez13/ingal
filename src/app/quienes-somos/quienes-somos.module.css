@@ -21,9 +21,11 @@
   left: 50%;
   transform: translateX(-50%);
   font-size: 45px;
+  width: 100%;
   font-family: 'Franklin Gothic', sans-serif;
   color: white;
   text-align: center;
+  padding-bottom: 35px;
 }
 
 .whiteSection {
@@ -177,6 +179,12 @@
   transition: color 0.3s ease;
 }
 
+.valueItem {
+  transition: transform 0.3s ease 0.1s;
+}
+.valueItem:hover {
+  transform: scale(1.05);
+}
 .valueItem:hover .valueText {
   color: #fff;
 }
