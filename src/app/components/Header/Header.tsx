@@ -1,5 +1,5 @@
 import Link from "next/link";
-//import Image from "next/image";
+import Image from "next/image";
 import styles from "./Header.module.css";
 
 const Header = () => {
@@ -9,7 +9,12 @@ const Header = () => {
         {/* Logo */}
         <div className={styles.logo}>
           <Link href="/">
-            <img src="/images/logo.png" width="200" height="100" alt="Logo" />
+            <Image
+              src="/logo.png"
+              alt="Logo"
+              height={70} // Altura fija
+              width={205} // Ajusta según proporciones
+            />
           </Link>
         </div>
 
