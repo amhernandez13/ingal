@@ -214,7 +214,7 @@ export default function Footer() {
 
       {/* Sección inferior: Copyright */}
       <div style={{ textAlign: "center", fontSize: "18px" }}>
-        © 2025 Ingal de Occidente
+        © 2025 Ingal de Occidente. Todos los derechos reservados.
       </div>
     </footer>
   );
