@@ -114,7 +114,8 @@ export default function Footer() {
             Información
           </h2>
           <p style={{ margin: "0 0 5px 0" }}>
-            Cl. 3 #4, La Dolores, Cali, Palmira, Valle del Cauca.
+            Calle 3 transversal #4-151, La Dolores, Palmira, Valle del Cauca,
+            Colombia.
           </p>
           <p style={{ margin: "0 0 5px 0" }}>+57 3016826125</p>
           <p style={{ margin: "0 0 20px 0" }}>

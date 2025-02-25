@@ -38,7 +38,8 @@ const Ubicanos = () => {
             marginTop: "10px",
           }}
         >
-          Cl. 3 #4, La Dolores, Cali, Palmira, Valle del Cauca.
+          Calle 3 transversal #4-151, La Dolores, Palmira, Valle del Cauca,
+          Colombia.
         </p>
         <style jsx global>{`
           .jump {
