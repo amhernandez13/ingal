@@ -202,7 +202,7 @@ export default function QuienesSomos() {
         <div className={styles.valuesContainer}>
           <div className={styles.valueItem}>
             <Image
-              src="/quienes-somos-1.jpg"
+              src="/quienes-somos-1.JPG"
               alt="Compromiso"
               fill
               className={styles.valueImage}
