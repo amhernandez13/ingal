@@ -157,9 +157,6 @@
     font-size: 16px;
   }
 
-  .iconContainer {
-    flex-direction: column;
-  }
 
   .imageWrapper {
     max-width: 200px;

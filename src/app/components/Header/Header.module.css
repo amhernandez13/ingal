@@ -51,7 +51,7 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 895px) {
   .burger {
     display: block;
   }

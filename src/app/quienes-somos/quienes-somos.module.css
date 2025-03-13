@@ -188,3 +188,128 @@
 .valueItem:hover .valueText {
   color: #fff;
 }
+
+/* TABLETS (hasta 1024px) */
+@media (max-width: 1024px) {
+  .bannerContainer {
+    height: 500px;
+  }
+
+  .title {
+    font-size: 36px;
+    bottom: 30px;
+  }
+
+  .description {
+    font-size: 18px;
+    padding: 0 20px;
+  }
+
+  .cardsContainer {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .card {
+    width: 300px;
+    height: 300px;
+  }
+
+  .valuesTitle {
+    font-size: 28px;
+  }
+
+  .valuesContainer {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .valueItem {
+    width: 300px;
+    height: 400px;
+  }
+
+  .valueText {
+    font-size: 20px;
+  }
+}
+
+/* PHABLETS Y MÓVILES GRANDES (hasta 768px) */
+@media (max-width: 768px) {
+  .bannerContainer {
+    height: 400px;
+  }
+
+  .title {
+    font-size: 28px;
+    bottom: 20px;
+  }
+
+  .description {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+
+  .cardsContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card {
+    width: 280px;
+    height: 280px;
+  }
+
+  .valuesTitle {
+    font-size: 24px;
+  }
+
+  .valuesContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .valueItem {
+    width: 280px;
+    height: 380px;
+  }
+
+  .valueText {
+    font-size: 18px;
+  }
+}
+
+/* MÓVILES PEQUEÑOS (hasta 480px) */
+@media (max-width: 480px) {
+  .bannerContainer {
+    height: 300px;
+  }
+
+  .title {
+    font-size: 22px;
+    bottom: 10px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .card {
+    width: 250px;
+    height: 250px;
+  }
+
+  .valuesTitle {
+    font-size: 20px;
+  }
+
+  .valueItem {
+    width: 250px;
+    height: 350px;
+  }
+
+  .valueText {
+    font-size: 16px;
+  }
+}
