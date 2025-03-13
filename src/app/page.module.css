@@ -1,0 +1,217 @@
+/* Video */
+.videoContainer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 590px;
+  }
+  
+  .videoElement {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* Texto alineado a la derecha */
+  .textoDerecha {
+    padding: 50px;
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    background-image: url('/postes.webp');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+  
+  .tituloDerecha {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.2;
+    font-family: "Neuropolitical RG";
+  }
+  
+  /* Ingal en cifras */
+  .cifrasTitulo {
+    font-size: 45px;
+    margin-top: 70px;
+    margin-bottom: -25px;
+    text-align: center;
+    font-family: "Franklin Gothic", sans-serif;
+  }
+  
+  .cifrasContainer {
+    background: white;
+    border-radius: 150px;
+    padding: 30px 50px;
+    margin: 50px auto;
+    max-width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: "Franklin Gothic", sans-serif;
+  }
+  
+  .cifrasGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+  }
+  
+  .cifraNumero {
+    font-size: 48px;
+    font-weight: bold;
+    color: #E52521;
+    margin-bottom: 5px;
+  }
+  
+  .cifraTexto {
+    font-size: 20px;
+    font-weight: bold;
+    color: #232856;
+    font-family: "Neuropolitical RG";
+  }
+  
+  /* Tablet */
+  @media (max-width: 1120px) {
+    .videoContainer {
+      height: 400px;
+    }
+  
+    .textoDerecha {
+      padding: 40px;
+    }
+  
+    .tituloDerecha {
+      font-size: 30px;
+    }
+  
+    .cifrasTitulo {
+      font-size: 38px;
+    }
+  
+    .cifrasContainer {
+      border-radius: 100px;
+      padding: 25px 40px;
+    }
+  
+    .cifrasGrid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+  
+    .cifraNumero {
+      font-size: 40px;
+    }
+  
+    .cifraTexto {
+      font-size: 18px;
+    }
+  
+    .cifrasGrid > div:nth-child(4) {
+      grid-column: 1;
+    }
+  
+    .cifrasGrid > div:nth-child(5) {
+      grid-column: 3;
+    }
+  }
+  
+  /* PHABLETS / MÓVILES GRANDES */
+  @media (max-width: 768px) {
+    .videoContainer {
+      height: 300px;
+      margin-top: 100px;
+    }
+  
+    .textoDerecha {
+      padding: 30px;
+    }
+  
+    .tituloDerecha {
+      font-size: 24px;
+    }
+  
+    .cifrasTitulo {
+      font-size: 32px;
+    }
+  
+    .cifrasContainer {
+      border-radius: 80px;
+      padding: 20px 30px;
+    }
+  
+    .cifrasGrid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      justify-items: center;
+    }
+  
+    .cifraNumero {
+      font-size: 32px;
+    }
+  
+    .cifraTexto {
+      font-size: 16px;
+    }
+
+    .cifrasGrid > div:nth-child(1),
+    .cifrasGrid > div:nth-child(2),
+    .cifrasGrid > div:nth-child(3),
+    .cifrasGrid > div:nth-child(4) {
+      grid-column: auto;
+    }
+  
+    /* "BRAZOS PARA LUMINARIA" en el centro (que es la segunda columna) */
+    .cifrasGrid > div:nth-child(5) {
+      grid-column: 1 / -1;
+      justify-self: center;
+    }
+  }
+  
+  /* MÓVILES PEQUEÑOS */
+  @media (max-width: 480px) {
+    .videoContainer {
+      height: 200px;
+    }
+  
+    .textoDerecha {
+      padding: 20px;
+    }
+  
+    .tituloDerecha {
+      font-size: 20px;
+    }
+  
+    .cifrasTitulo {
+      font-size: 28px;
+    }
+  
+    .cifrasContainer {
+      border-radius: 60px;
+      padding: 15px 20px;
+    }
+  
+    .cifrasGrid {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+  
+    .cifraNumero {
+      font-size: 28px;
+    }
+  
+    .cifraTexto {
+      font-size: 14px;
+    }
+  
+    /* En móviles pequeños, dejamos que fluyan en columna única */
+    .cifrasGrid > div:nth-child(4) {
+      grid-column: auto;
+    }
+  
+    .cifrasGrid > div:nth-child(5) {
+      grid-column: auto;
+    }
+  }

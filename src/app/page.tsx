@@ -2,10 +2,10 @@
 
 import Ubicanos from "./components/Ubicanos/Ubicanos";
 import OurProjects from "./components/ProyectosNacionales/ProyectosNacionales";
-import Contactanos from "./components/Contactanos/Contactanos";
 import Servicios from "./components/Servicios/Servicios";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
+import styles from "./page.module.css";
 
 export default function Home() {
   const { ref, inView } = useInView({
@@ -16,51 +16,20 @@ export default function Home() {
   return (
     <main>
       {/* Video */}
-      <div
-        style={{
-          position: "relative",
-          width: "100%",
-          overflow: "hidden",
-          height: "590px",
-        }}
-      >
+      <div className={styles.videoContainer}>
         <video
           src="/videos/presentacion.mp4"
           autoPlay
           loop
           muted
           playsInline
-          style={{
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
-            display: "block",
-          }}
+          className={styles.videoElement}
         />
       </div>
 
       {/* Texto alineado a la derecha */}
-      <div
-        style={{
-          padding: "50px",
-          textAlign: "right",
-          backgroundColor: "rgba(0, 0, 0, 0.7)",
-          color: "white",
-          backgroundImage: "url('/postes.webp')",
-          backgroundSize: "cover",
-          backgroundPosition: "top",
-          backgroundRepeat: "no-repeat",
-          width: "100%",
-        }}
-      >
-        <h1
-          style={{
-            fontSize: "36px",
-            fontWeight: "bold",
-            lineHeight: "1.2",
-            fontFamily: "Neuropolitical RG",
-          }}
-        >
+      <div className={styles.textoDerecha}>
+        <h1 className={styles.tituloDerecha}>
           Fabricamos la mejor solución para su <br /> proyecto
         </h1>
       </div>
@@ -68,47 +37,13 @@ export default function Home() {
       <OurProjects />
 
       {/* Sección de números animados */}
-      {/* Título superior */}
-      <h2
-        style={{
-          fontSize: "45px",
-          marginTop: "70px",
-          marginBottom: "-25px",
-          textAlign: "center",
-          fontFamily: "'Franklin Gothic', sans-serif",
-        }}
-      >
-        Ingal en cifras
-      </h2>
-      <div
-        ref={ref}
-        style={{
-          background: "white",
-          borderRadius: "150px",
-          padding: "30px 50px",
-          margin: "50px auto",
-          maxWidth: "90%",
-          boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
-          textAlign: "center",
-          fontFamily: "'Franklin Gothic', sans-serif",
-        }}
-      >
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(5, 1fr)",
-            gap: "10px",
-          }}
-        >
+      <h2 className={styles.cifrasTitulo}>Ingal en cifras</h2>
+
+      <div ref={ref} className={styles.cifrasContainer}>
+        <div className={styles.cifrasGrid}>
+          {/* Item 1 */}
           <div>
-            <h2
-              style={{
-                fontSize: "48px",
-                fontWeight: "bold",
-                color: "#E52521",
-                marginBottom: "5px",
-              }}
-            >
+            <h2 className={styles.cifraNumero}>
               {inView ? (
                 <CountUp
                   start={0}
@@ -121,27 +56,12 @@ export default function Home() {
                 "+0"
               )}
             </h2>
-            <h3
-              style={{
-                fontSize: "20px",
-                fontWeight: "bold",
-                color: "#232856",
-                fontFamily: "Neuropolitical RG",
-              }}
-            >
-              POSTE PANEL
-            </h3>
+            <h3 className={styles.cifraTexto}>POSTE PANEL</h3>
           </div>
 
+          {/* Item 2 */}
           <div>
-            <h2
-              style={{
-                fontSize: "48px",
-                fontWeight: "bold",
-                color: "#E52521",
-                marginBottom: "5px",
-              }}
-            >
+            <h2 className={styles.cifraNumero}>
               {inView ? (
                 <CountUp
                   start={0}
@@ -154,27 +74,12 @@ export default function Home() {
                 "+0"
               )}
             </h2>
-            <h3
-              style={{
-                fontSize: "20px",
-                fontWeight: "bold",
-                color: "#232856",
-                fontFamily: "Neuropolitical RG",
-              }}
-            >
-              ALUMBRADO PÚBLICO
-            </h3>
+            <h3 className={styles.cifraTexto}>ALUMBRADO PÚBLICO</h3>
           </div>
 
+          {/* Item 3 */}
           <div>
-            <h2
-              style={{
-                fontSize: "48px",
-                fontWeight: "bold",
-                color: "#E52521",
-                marginBottom: "5px",
-              }}
-            >
+            <h2 className={styles.cifraNumero}>
               {inView ? (
                 <CountUp
                   start={0}
@@ -187,27 +92,12 @@ export default function Home() {
                 "+0"
               )}
             </h2>
-            <h3
-              style={{
-                fontSize: "20px",
-                fontWeight: "bold",
-                color: "#232856",
-                fontFamily: "Neuropolitical RG",
-              }}
-            >
-              DISTRIBUCIÓN
-            </h3>
+            <h3 className={styles.cifraTexto}>DISTRIBUCIÓN</h3>
           </div>
 
+          {/* Item 4 */}
           <div>
-            <h2
-              style={{
-                fontSize: "48px",
-                fontWeight: "bold",
-                color: "#E52521",
-                marginBottom: "5px",
-              }}
-            >
+            <h2 className={styles.cifraNumero}>
               {inView ? (
                 <CountUp
                   start={0}
@@ -220,27 +110,12 @@ export default function Home() {
                 "+0"
               )}
             </h2>
-            <h3
-              style={{
-                fontSize: "20px",
-                fontWeight: "bold",
-                color: "#232856",
-                fontFamily: "Neuropolitical RG",
-              }}
-            >
-              POSTES FIBRA
-            </h3>
+            <h3 className={styles.cifraTexto}>POSTES FIBRA</h3>
           </div>
 
+          {/* Item 5 */}
           <div>
-            <h2
-              style={{
-                fontSize: "48px",
-                fontWeight: "bold",
-                color: "#E52521",
-                marginBottom: "5px",
-              }}
-            >
+            <h2 className={styles.cifraNumero}>
               {inView ? (
                 <CountUp
                   start={0}
@@ -253,23 +128,13 @@ export default function Home() {
                 "+0"
               )}
             </h2>
-            <h3
-              style={{
-                fontSize: "20px",
-                fontWeight: "bold",
-                color: "#232856",
-                fontFamily: "Neuropolitical RG",
-              }}
-            >
-              BRAZOS PARA LUMINARIA
-            </h3>
+            <h3 className={styles.cifraTexto}>BRAZOS PARA LUMINARIA</h3>
           </div>
         </div>
       </div>
 
       <Servicios />
       <Ubicanos />
-      <Contactanos />
     </main>
   );
 }

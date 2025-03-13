@@ -1,4 +1,4 @@
-/* Aseguramos que el contenedor sea relativo para posicionar el fondo */
+/* CONTENEDOR PRINCIPAL */
 .container {
   position: relative;
   width: 100%;
@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-/* Imagen de fondo */
+/* IMAGEN DE FONDO */
 .backgroundImage {
   position: absolute;
   top: 0;
@@ -17,24 +17,21 @@
   background-repeat: no-repeat;
   background-position: right center;
   background-size: contain;
-  opacity: 0.5; /* Transparencia: 0 (transparente) a 1 (opaco) */
-  z-index: -1; /* Para que quede detrás del contenido */
+  opacity: 0.5;
+  z-index: -1;
 }
 
-
-
-/* Título */
+/* TÍTULO */
 .title {
   font-size: clamp(18px, 2.5vw, 24px);
   font-weight: bold;
-  margin: 50px 0;
-  margin-bottom: 70px;
+  margin: 50px 0 70px 0;
   text-align: left;
   color: #fff;
   font-family: "Neuropolitical RG", sans-serif;
 }
 
-/* Grilla de 5 columnas y 2 filas fijas */
+/* GRILLA DE TARJETAS */
 .gridContainer {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -44,13 +41,14 @@
   box-sizing: border-box;
 }
 
+/* TARJETAS */
 .card {
   padding: 10px;
   text-align: center;
   border-radius: 10px;
 }
 
-/* Título de la tarjeta */
+/* TÍTULO DE CADA TARJETA */
 .cardTitle {
   font-size: clamp(16px, 2vw, 24px);
   font-weight: bold;
@@ -91,26 +89,84 @@
   overflow-wrap: break-word;
 }
 
-/* Contenedor para la imagen: forzamos dimensiones fijas */
+/* IMÁGENES EN LAS TARJETAS */
 .imageWrapper {
   width: 100%;
-  max-width: 300px; /* Ancho máximo uniforme para todas las imágenes */
-  height: 300px;    /* Altura fija para forzar la misma proporción */
+  max-width: 300px;
+  height: 300px;
   margin: 0 auto;
   position: relative;
-  /* Evita que la imagen agrandada se desborde */
 }
 
-/* Estilo para la imagen */
 .responsiveImage {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* La imagen se ajusta sin distorsionarse */
+  object-fit: contain;
   display: block;
-  transition: transform 0.3s ease;  /* Transición suave para el escalado */
+  transition: transform 0.3s ease;
 }
 
-/* Efecto hover: agranda la imagen un poco */
 .responsiveImage:hover {
   transform: scale(1.1);
+}
+
+/* TABLETS PEQUEÑAS Y PHABLETS (1024px a 768px) */
+@media (max-width: 1024px) {
+  .gridContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* PHABLETS Y MÓVILES GRANDES (768px a 480px) */
+@media (max-width: 768px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .cardTitle {
+    font-size: 18px;
+  }
+
+  .imageWrapper {
+    max-width: 250px;
+    height: 250px;
+  }
+
+  .responsiveImage:hover {
+    transform: scale(1.05);
+  }
+}
+
+/* MÓVILES PEQUEÑOS (menos de 480px) */
+@media (max-width: 480px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .cardTitle {
+    font-size: 16px;
+  }
+
+  .iconContainer {
+    flex-direction: column;
+  }
+
+  .imageWrapper {
+    max-width: 200px;
+    height: 200px;
+  }
+
+  .responsiveImage:hover {
+    transform: scale(1.03);
+  }
 }
